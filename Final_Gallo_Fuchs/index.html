@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>VD | Ejemplo Scrolly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <main>
+      <section id="intro">
+        <h1 class="intro__hed">
+          Una comparación entre la música que escucha cada una
+        </h1>
+        <p>
+          A medida que se hace scroll, se pueden observar distintas formas de comparar la música que escucha cada una. Comparamos mediante distintos gráficos a los artistas que escuchamos, la duración promedio y la popularidad promedio de las canciones que más escuchamos. Utilizamos una base de datos que obtuvimos de las playlist que más escuchamos en Spotify. 
+        </p>
+      </section>
+
+      <section id="scrolly">
+        <figure>
+          
+        </figure>
+
+        <article>
+          <div class="step" data-step="grafico1">
+            <p>Altura (STEP 1)</p>
+            <p class="progress">0.0%</p>
+          </div>
+          <div class="step" data-step="grafico2">
+            <p>Edad (STEP 2)</p>
+            <p class="progress">0.0%</p>
+          </div>
+          <div class="step" data-step="grafico3">
+            <p>Goles (STEP 3)</p>
+            <p class="progress">0.0%</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="outro">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Et molestie ac feugiat sed lectus. Erat nam at lectus
+          urna duis convallis. In eu mi bibendum neque egestas congue. Ut lectus arcu bibendum at.
+          Sit amet nisl purus in mollis nunc. Et malesuada fames ac turpis egestas sed tempus urna.
+          Velit egestas dui id ornare arcu odio ut sem nulla. Egestas tellus rutrum tellus
+          pellentesque eu tincidunt tortor. Ut lectus arcu bibendum at varius vel. Justo eget magna
+          fermentum iaculis eu. Consequat id porta nibh venenatis cras sed felis eget velit. Nisi
+          scelerisque eu ultrices vitae auctor eu augue.
+        </p>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
