@@ -309,7 +309,7 @@ function grafico3() {
       .style("font-family", "Arial")
       .style("font-size", "12px")
       .text("Popularidad Promedio");
-  
-/*   d3.select("#scrolly figure figure").remove();
+
+      /*   d3.select("#scrolly figure figure").remove();
   d3.select("#scrolly figure").append(() => chart3); */
 }
