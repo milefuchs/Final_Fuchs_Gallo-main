@@ -16,9 +16,6 @@ d3.csv("datosfinal.csv", d3.autoType).then((data) => {
       )),
     ],
     
-    marginLeft: 10,
-    marginBottom: 1000,
-    width: 1500,
     nice: true,
     line: true,
     zero: true,

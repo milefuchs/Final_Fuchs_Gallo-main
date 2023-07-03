@@ -1,6 +1,6 @@
 // using d3 for convenience
 let main = d3.select("main");
-let scrolly = main.select("#scrolly");
+let scrolly = main.select("#scrolly-side");
 let $figure = scrolly.select("figure");
 let wChart = 1200
 let hChart = wChart * 0.5;
@@ -66,6 +66,11 @@ function handleStepProgress(response) {
   $step.select(".progress").text(d3.format(".1%")(response.progress));
 }
 
+scroller.container(function () {
+  return document.querySelector(scrollama); // Reemplaza "#scrollama" con el selector del contenedor de scrollama
+}).right(); // Alinea el scrollama a la derecha
+
+
 function init() {
   // 1. setup the scroller passing options
   // 		this will also initialize trigger observations
@@ -100,7 +105,7 @@ function grafico1() {
               },
           )),
         ],
-        
+        marginTop: 100,
         marginLeft: 10,
         marginBottom: 1000,
         width: 1500,
@@ -148,7 +153,7 @@ function grafico2(){
       .attr("height", height)
       .style("background", "hsl(0, 0%, 0%)");
   
-    const margin = { top: 20, right: 100, bottom: 50, left: 80 };
+    const margin = { top: 100, right: 100, bottom: 50, left: 80 };
   
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
