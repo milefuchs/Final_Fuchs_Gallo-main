@@ -1,6 +1,6 @@
 // using d3 for convenience
 let main = d3.select("main");
-let scrolly = main.select("#scrolly-side");
+let scrolly = main.select("#scrolly");
 let $figure = scrolly.select("figure");
 let wChart = 1200
 let hChart = wChart * 0.5;

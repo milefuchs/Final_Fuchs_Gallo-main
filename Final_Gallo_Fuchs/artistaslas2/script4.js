@@ -19,6 +19,9 @@ d3.csv("datosfinal.csv", d3.autoType).then((data) => {
     nice: true,
     line: true,
     zero: true,
+    marginLeft:100,
+
+
     x: {
       labelOffset: 35,
       labelAnchor: 'center',
