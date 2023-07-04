@@ -9,13 +9,18 @@ d3.csv("datosfinal.csv", d3.autoType).then((data) => {
   const width = 800;
   const height = 400;
 
-  const svg = d3.select("#chart")
+  const chartContainer = d3.select("#chart")
+  .append("div")
+  .style("display", "flex")
+  .style("justify-content", "center");
+
+  const svg = chartContainer
     .append("svg")
     .attr("width", width)
     .attr("height", height)
     .style("background", "hsl(0, 0%, 0%)");
 
-  const margin = { top: 50, right: 20, bottom: 70, left: 100 }; // Aumenté el espacio inferior y izquierdo para dar espacio a los textos
+  const margin = { top: 50, right: 20, bottom: 70, left: 200 }; // Aumenté el espacio inferior y izquierdo para dar espacio a los textos
 
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;

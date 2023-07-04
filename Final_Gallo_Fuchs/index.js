@@ -66,9 +66,9 @@ function handleStepProgress(response) {
   $step.select(".progress").text(d3.format(".1%")(response.progress));
 }
 
-scroller.container(function () {
-  return document.querySelector(scrollama); // Reemplaza "#scrollama" con el selector del contenedor de scrollama
-}).right(); // Alinea el scrollama a la derecha
+//scroller.container(function () {
+  //return document.querySelector(scrollama); // Reemplaza "#scrollama" con el selector del contenedor de scrollama
+//}).right(); // Alinea el scrollama a la derecha
 
 
 function init() {
@@ -78,7 +78,7 @@ function init() {
   scroller
     .setup({
       step: "#scrolly article .step",
-      offset: 0.33,
+      offset: 0.50,
       debug: false,
       progress: true,
     })
