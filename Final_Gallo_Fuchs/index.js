@@ -105,8 +105,8 @@ function grafico1() {
               },
           )),
         ],
-        marginTop: 100,
-        marginLeft: 10,
+        marginTop: 70,
+        marginLeft: 70,
         marginBottom: 1000,
         width: 1500,
         nice: true,
@@ -144,8 +144,8 @@ function grafico2(){
   
     const sortedPromedios = promedios.sort((a, b) => d3.descending(a.promedio, b.promedio));
   
-    const width = 600;
-    const height = 450;
+    const width = 700;
+    const height = 650;
   
     const svg = d3.select("#scrolly figure")
       .append("svg")
@@ -153,7 +153,7 @@ function grafico2(){
       .attr("height", height)
       .style("background", "hsl(0, 0%, 0%)");
   
-    const margin = { top: 100, right: 100, bottom: 50, left: 80 };
+    const margin = { top: 200, right: 50, bottom: 50, left: 50 };
   
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
@@ -237,8 +237,8 @@ function grafico3() {
       popularity: d3.mean(songs, (d) => d.popularity),
     }));
   
-    const width = 800;
-    const height = 400;
+    const width = 650;
+    const height = 650;
 
     const svg = d3.select("#scrolly figure")
       .append("svg")
@@ -246,7 +246,7 @@ function grafico3() {
       .attr("height", height)
       .style("background", "hsl(0, 0%, 0%)");
 
-    const margin = { top: 50, right: 20, bottom: 70, left: 100 }; // Aumenté el espacio inferior y izquierdo para dar espacio a los textos
+    const margin = { top: 300, right: 20, bottom: 20, left: 40 }; // Aumenté el espacio inferior y izquierdo para dar espacio a los textos
 
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
