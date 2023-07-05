@@ -68,11 +68,18 @@
     font-size: 28px;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 55px;
+    margin-bottom: 10px;
     text-align: center;
   }
   
-  h3,
+  h3{
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 200;
+  }
+
   h4,
   a {
     margin: 0;
@@ -138,6 +145,10 @@
   
   #intro {
     margin-bottom: 300px;
+  }
+
+  #intro2{
+    margin-bottom: 100px;
   }
   
   #outro {  
@@ -216,6 +227,7 @@
     font-size: 8rem;
     font-weight: 900;
     color: #fff;
+    
   }
   
   .step {
